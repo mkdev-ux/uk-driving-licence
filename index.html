@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Driving Licence Assistance</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #072b42;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .hero {
+      background: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      color: #0b3c5d;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      margin-bottom: 15px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #1fa67a;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta:hover {
+      background: #178a65;
+    }
+
+    .section {
+      background: #fff;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
+
+    .section h3 {
+      color: #0b3c5d;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .contact-box {
+      background: #e8f5f0;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin: 5px 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0b3c5d;
+    }
+
+    footer {
+      background: #072b42;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UK Driving Licence Assistance</h1>
+    <p>Support for Provisional, Theory Test & Full UK Driving Licence</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="hero">
+      <h2>Get Your UK Driving Licence Easily</h2>
+      <p>
+        We provide guidance and assistance for applying for a UK driving licence,
+        including provisional licence, theory test booking, and full licence support.
+      </p>
+      <a class="cta" href="https://wa.me/447724500272">Contact on WhatsApp</a>
+    </div>
+
+    <div class="section" id="services">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Provisional Driving Licence application guidance</li>
+        <li>Theory Test booking assistance</li>
+        <li>Practical Test preparation advice</li>
+        <li>Full UK Driving Licence process support</li>
+        <li>General DVLA application help</li>
+      </ul>
+    </div>
+
+    <div class="section" id="requirements">
+      <h3>Basic Requirements</h3>
+      <ul>
+        <li>Valid UK address</li>
+        <li>Proof of identity (passport or BRP)</li>
+        <li>National Insurance Number (if available)</li>
+        <li>Minimum age: 17 years</li>
+      </ul>
+    </div>
+
+    <div class="section contact-box" id="contact">
+      <h3>Contact Information</h3>
+      <p>Call or WhatsApp us for more information</p>
+      <p><strong>Phone / WhatsApp:</strong> +44 7724 500272</p>
+      <a href="tel:+447724500272">Call Now</a> |
+      <a href="https://wa.me/447724500272">WhatsApp Chat</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 UK Driving Licence Assistance. All rights reserved.</p>
+    <p>This website is for guidance purposes only and is not affiliated with DVLA.</p>
+  </footer>
+
+</body>
+<script>
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+</script>
+
+</html>
